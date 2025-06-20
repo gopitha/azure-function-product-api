@@ -29,5 +29,22 @@ namespace ProductFunction.Services
 
             await _tableClient.AddEntityAsync(entity);
         }
+
+        //  metode for å hente alle produkter fra tabellen
+        public async Task<List<Product>> GetProductsAsync()
+        {
+            // Henter alle entiteter (rader) som tilhører partition key "Product"
+            var entities = _tableClient.Query<TableEntity>(filter: $"PartitionKey eq 'Product'").ToList();
+
+            // Gjør om radene til en liste med Product-objekter
+            var products = entities.Select(e => new Product
+            {
+                Name = e.GetString("Name"),
+                Price = e.GetInt32("Price") ?? 0,
+                Category = e.GetString("Category")
+            }).ToList();
+
+            return await Task.FromResult(products);
+        }
     }
 }
