@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppRec xmlns="http://www.kith.no/xmlstds/apprec/2012-02-15">
+  <MsgType V="APPREC" />
+  <MIGversion>v1.1 2012-02-15</MIGversion>
+  <SoftwareName>Message Broker</SoftwareName>
+  <SoftwareVersion>v3.4</SoftwareVersion>
+  <GenDate>2025-08-29T09:52:26.9058216+02:00</GenDate>
+  <Id>7b62e094-e019-421e-9423-66f85fc24851</Id>
+  <Sender>
+    <Role V="PRIM" DN="Primærmottaker" />
+    <HCP>
+      <Inst>
+        <Name>Sykehuset i Vestfold HF</Name>
+        <Id>69</Id>
+        <TypeId V="HER" DN="HER-id" />
+        <Dept>
+          <Name> INTENSIVPOST</Name>
+          <Id>ANEI1</Id>
+          <TypeId V="LAV" DN="Lokal identifikator for avdelinger" />
+        </Dept>
+        <AdditionalId>
+          <Id>983975259</Id>
+          <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+        </AdditionalId>
+      </Inst>
+    </HCP>
+  </Sender>
+  <Receiver>
+    <Role V="AVS" DN="Avsender" />
+    <HCP>
+      <Inst>
+        <Name>Sykehuset i Vestfold HF</Name>
+        <Id>69</Id>
+        <TypeId V="HER" DN="HER-id" />
+        <Dept>
+          <Name>Sentrallaboratoriet SiV Tønsberg SV</Name>
+          <Id>124925</Id>
+          <TypeId V="HER" DN="HER-id" />
+          <AdditionalId>
+            <Id>SLA-SV</Id>
+            <Type V="LAV" DN="Lokal identifikator for avdelinger" />
+          </AdditionalId>
+        </Dept>
+        <AdditionalId>
+          <Id>983975259</Id>
+          <Type V="ENH" DN="Organisasjonsnummeret i Enhetsregister" />
+        </AdditionalId>
+      </Inst>
+    </HCP>
+  </Receiver>
+  <Status V="1" DN="OK" />
+  <OriginalMsgId>
+    <MsgType V="SVAR_KKL" DN="Svarrapport-KKL" />
+    <IssueDate>2025-04-02T11:02:41</IssueDate>
+    <Id>01568a30-7ff3-47cc-a956-a30da87ec6c9</Id>
+  </OriginalMsgId>
+</AppRec>
