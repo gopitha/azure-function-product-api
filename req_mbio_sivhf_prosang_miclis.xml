@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2005-05-20" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Type DN="Rekvisition" V="R" />
+  <MsgVersion>v1.4 2005-05-20</MsgVersion>
+  <MIGversion>v1.4 2005-05-20</MIGversion>
+  <GenDate V="2025-01-27T13:05:59" />
+  <MsgId>25000512</MsgId>
+  <ServReq>
+    <ServType V="N" />
+    <IssueDate V="2025-01-27" />
+    <Id>25000512</Id>
+    <MsgDescr DN="Mikrobiologi" V="MBIO" />
+    <Patient>
+      <Sex V="2" DN="Kvinne" />
+      <DateOfBirth V="2013-03-13" />
+      <Name>Testpasient Kopter, Rosa Eli Nhn</Name>
+      <OffId>13031353453</OffId>
+      <TypeOffId V="FNR" DN="FÃ¸dselsnummer" />
+      <Address>
+        <Type V="H" DN="Bostedsadresse" />
+        <StreetAdr>Dyrdalsgata 15</StreetAdr>
+        <PostalCode>9392</PostalCode>
+        <City>Stonglandseidet</City>
+        <County DN="Senja" V="5530" />
+      </Address>
+      <InfItem>
+        <Observation>
+          <Description>test overfÃ¸ring til mlx
+</Description>
+        </Observation>
+        <Type V="OPPL" DN="Klinisk opplysning" />
+      </InfItem>
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <Inst>
+          <Name>Sykehuset i Vestfold HF</Name>
+          <Id>69</Id>
+          <TypeId DN="HER-id" V="HER" />
+          <Dept>
+            <Name>Mikrobiologiskt avdelning</Name>
+            <Id>125409</Id>
+            <TypeId DN="HER-id" V="HER" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Sykehuset i Vestfold HF</Name>
+          <Id>69</Id>
+          <TypeId DN="HER-id" V="HER" />
+          <Dept>
+            <Name>Blodbanken</Name>
+            <Id>123710</Id>
+            <TypeId DN="HER-id" V="HER" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </Requester>
+    <ReqInvestigation>
+      <ServType DN="NY" V="N" />
+      <Investigation>
+        <Id DN="HBSAG" OT="HBSAG" S="2.16.578.1.12.4.1.1.8212" V="UGB" />
+      </Investigation>
+      <Investigation>
+        <Id DN="HIV" OT="HIV" S="2.16.578.1.12.4.1.1.8212" V="UGH" />
+      </Investigation>
+      <Investigation>
+        <Id DN="HCV" OT="HCV" S="2.16.578.1.12.4.1.1.8212" V="UGC" />
+      </Investigation>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2025-01-27T13:05:59" />
+        </CollectedSample>
+        <Type>Plasma/ Serum</Type>
+        <IdByRequester>J008625000512</IdByRequester>
+        <IdByServProv>25000512</IdByServProv>
+      </AnalysedSubject>
+    </ReqInvestigation>
+  </ServReq>
+</Message>

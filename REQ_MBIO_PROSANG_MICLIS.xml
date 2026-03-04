@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2005-05-20" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Type DN="Rekvisition" V="R" />
+  <MsgVersion>v1.4 2005-05-20</MsgVersion>
+  <MIGversion>v1.4 2005-05-20</MIGversion>
+  <GenDate V="2025-03-05T12:17:07" />
+  <MsgId>24000140</MsgId>
+  <ServReq>
+    <ServType V="N" />
+    <IssueDate V="2025-03-05" />
+    <Id>24000140</Id>
+    <MsgDescr DN="Mikrobiologi" V="MBIO" />
+    <Patient>
+      <Sex DN="Kvinne" V="2" />
+      <DateOfBirth V="1969-11-13" />
+      <Name>LINE, DANSER</Name>
+      <IdByServProvider>Z008624000140</IdByServProvider>
+      <IdByRequester>Z008624000140</IdByRequester>
+      <OffId>13116900216</OffId>
+      <TypeOffId DN="Fødselsnummer" V="FNR" />
+      <Address>
+        <Type DN="Bostedsadresse" V="H" />
+        <StreetAdr>Drammensveien 200</StreetAdr>
+        <PostalCode>3001</PostalCode>
+        <City>Drammen</City>
+      </Address>
+    </Patient>
+    <ServProvider>
+      <HCP>
+        <Inst>
+          <Name>Sykehuset i Vestfold HF</Name>
+          <Id>69</Id>
+          <TypeId DN="HER-id" V="HER" />
+          <Dept>
+            <Name>Mikrobiologiskt avdelning</Name>
+            <Id>125409</Id>
+            <TypeId DN="HER-id" V="HER" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </ServProvider>
+    <Requester>
+      <HCP>
+        <Inst>
+          <Name>Sykehuset i Vestfold HF</Name>
+          <Id>69</Id>
+          <TypeId DN="HER-id" V="HER" />
+          <Dept>
+            <Name>Blodbanken</Name>
+            <Id>123710</Id>
+            <TypeId DN="HER-id" V="HER" />
+          </Dept>
+        </Inst>
+      </HCP>
+    </Requester>
+    <ReqInvestigation>
+      <ServType DN="NY" V="N" />
+      <Investigation>
+        <Id DN="HBSAG" OT="HBSAG" S="2.16.578.1.12.4.1.1.8212" V="UGB" />
+      </Investigation>
+      <Investigation>
+        <Id DN="HIV" OT="HIV" S="2.16.578.1.12.4.1.1.8212" V="UGH" />
+      </Investigation>
+      <Investigation>
+        <Id DN="HCV" OT="HCV" S="2.16.578.1.12.4.1.1.8212" V="UGC" />
+      </Investigation>
+      <AnalysedSubject>
+        <CollectedSample>
+          <CollectedDate V="2025-03-05T12:17:07" />
+        </CollectedSample>
+        <Type>Plasma/ Serum</Type>
+        <IdByRequester>Z008624000140</IdByRequester>
+        <IdByServProv>24000140</IdByServProv>
+      </AnalysedSubject>
+    </ReqInvestigation>
+  </ServReq>
+</Message>
